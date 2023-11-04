@@ -105,6 +105,6 @@ This is the subjected file for the Assigment 1
 PATH: https://github.com/Smurfie07/myDevOps/main/README.md
 
 ●	Step 8 (5 marks): Push the Codebase to GitHub
-
+Commands used: Git init / add / status / commit / push [origin/branch] / pull [origin] [branch]
 - First connecting local folder to this myDevOps repo.
-- 
+- Configuring git congif to global for future authentication.
