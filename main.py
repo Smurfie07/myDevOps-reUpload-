@@ -1,18 +1,29 @@
 from fastapi import FastAPI
 from fastapi.responses import JSONResponse
 import uvicorn
+import random
 
 app = FastAPI()
 counter = 0
+x = random.randint(0,1)
 
 @app.get("/")
 def root():
-    return JSONResponse(
+    if x == 1:
+        return JSONResponse(
         {
             "status" : 200,
             "message": "Hello DevOps World",
             },
     )
+    else:
+        return JSONResponse(
+        {
+            "status" : 204,
+            "message": "Nill",
+            },
+    )
+
 @app.get("/count")
 def roof():
     global counter
